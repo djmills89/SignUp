@@ -152,6 +152,12 @@ picture img{
     section {
         display: flex;
         flex-direction: row-reverse;
-        gap: var(--space-700)
+        gap: var(--space-700);
+        padding: var(--space-300);
+    }
+    .newsletter__content h1, 
+    .newsletter__content p, 
+    .newsletter__content ul {
+        margin-block-end: var(--space-300);
     }
 }
