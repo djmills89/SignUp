@@ -10,7 +10,12 @@
 
 
 @media (min-width: 1000px) {
-    .newsletter__content button:focus, .newsletter__content button:hover, .newsletter__content button:active    {
+    .newsletter__content button:focus, 
+    .newsletter__content button:hover, 
+    .newsletter__content button:active,
+    .success-message button:focus,
+    .success-message button:hover,
+    .success-message button:active {
         background: linear-gradient(to right, #ff6a3a, #ff527b);
         outline: none;
     }

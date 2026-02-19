@@ -148,6 +148,23 @@ button {
     align-items: center;
 }
 
+.success-message {
+    background-color: var(--white);
+    max-width: 50rem;
+    max-height: 52rem;
+    margin-block-start: var(--space-700);
+    border-radius: 1rem;
+    padding: var(--space-700);
+}
+
+.success-message > * {
+    margin-block-end: var(--space-300);
+}
+
+.success-message button {
+    width: 100%;
+}
+
 @media (min-width: 550px) {
     body {
         background-color: var(--blue-700);
