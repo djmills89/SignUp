@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/active.css">
+  <link rel="stylesheet" href="./styles/error.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
@@ -28,13 +29,13 @@
           <li class="text-preset-3"> <img src="./assets/images/icon-list.svg" alt="Check mark icon"> Measuring to ensure updates are a success</li>
           <li class="text-preset-3"> <img src="./assets/images/icon-list.svg" alt="Check mark icon"> And much more!</li>
         </ul>
-        <form action="">
+        <form id="form" action="" novalidate>
           <div class="label-container">
             <label class="text-preset-4" for="email">Email address</label>
-            <label class="text-preset-4 error-msg">Valid email required</label>
+            <label class="text-preset-4 hidden error-text" id="error-msg">Valid email required</label>
           </div>
-          <input type="email" name="email" id="" placeholder="email@company.com">
-          <button class="text-preset-2" type="submit">Subscribe to monthly newsletter</button>
+          <input id="email" type="email" name="email" id="" placeholder="email@company.com">
+          <button class="text-preset-2" id="submit-button" type="submit">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </section>
@@ -55,5 +56,6 @@
   </div>
 
   <!-- Success message end -->
+   <script src="./script.js"></script>
 </body>
 </html>
