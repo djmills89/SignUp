@@ -18,14 +18,14 @@
   <!-- Sign-up form start -->
 
   <main>
-    <section id="newsletter-form">
+    <section id="newsletter-form" aria-labelledby="newsletter-heading">
       <picture>
         <source media="(min-width: 1000px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
         <source media="(min-width: 550px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
         <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Newsletter illustration">
       </picture>
       <div class="newsletter__content">
-        <h1 class="text-preset-1">Stay updated!</h1>
+        <h1 class="text-preset-1" id="newsletter-heading">Stay updated!</h1>
         <p class="text-preset-3">Join 60,000+ product managers receiving monthly updates on:</p>
         <ul>
           <li class="text-preset-3"> <img src="./assets/images/icon-list.svg" alt="Check mark icon"> Product discovery and building what matters</li>
@@ -43,15 +43,15 @@
       </div>
     </section>
 
-    <div class="success-message hidden" id="submit-success">
+    <section class="success-message hidden" id="submit-success" aria-live="polite">
       <img src="./assets/images/icon-success.svg" alt="Check mark icon">
       <p class="text-preset-1">Thanks for subscribing!</p>
       <p class="text-preset-3">
         A confirmation email has been sent to ash@loremcompany.com.
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button class="text-preset-2" id="reset-btn">Dismiss message</button>
-    </div>
+      <button class="text-preset-2" id="reset-btn" type="button">Dismiss message</button>
+    </section>
   </main>
 
   <!-- Sign-up form end -->

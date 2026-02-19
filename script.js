@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form)
     const userEmail = formData.get('email')
 
-    if (!userEmail.includes('@') || userEmail === '') {
+    if (!userEmail || !userEmail.includes('@') || userEmail === '') {
         email.classList.add('error-input')
         errorMsg.classList.remove('hidden')
     } else {
