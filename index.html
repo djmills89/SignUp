@@ -15,7 +15,7 @@
   <!-- Sign-up form start -->
 
   <main>
-    <section>
+    <section id="newsletter-form">
       <picture>
         <source media="(min-width: 1000px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
         <source media="(min-width: 550px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
@@ -39,21 +39,21 @@
         </form>
       </div>
     </section>
+
+    <div class="success-message hidden" id="submit-success">
+      <img src="./assets/images/icon-success.svg" alt="Check mark icon">
+      <p class="text-preset-1">Thanks for subscribing!</p>
+      <p class="text-preset-3">
+        A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.
+        <button class="text-preset-2" id="reset-btn">Dismiss message</button>
+       </p>
+    </div>
   </main>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
-  <div class="success-message hidden">
-    <img src="./assets/images/icon-success.svg" alt="Check mark icon">
-    <p class="text-preset-1">Thanks for subscribing!</p>
-    <p class="text-preset-3">
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-      <button class="text-preset-2">Dismiss message</button>
-    </p>
-  </div>
 
   <!-- Success message end -->
    <script src="./script.js"></script>
