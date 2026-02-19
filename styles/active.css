@@ -1,0 +1,17 @@
+.newsletter__content input:active {
+    border: 1px solid var(--blue-800);
+    color: var(--blue-800);
+}
+
+.newsletter__content input:focus {
+    outline: 2px solid var(--blue-800);
+}
+
+
+
+@media (min-width: 1000px) {
+    .newsletter__content button:focus, .newsletter__content button:hover, .newsletter__content button:active    {
+        background: linear-gradient(to right, #ff6a3a, #ff527b);
+        outline: none;
+    }
+}

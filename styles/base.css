@@ -55,6 +55,10 @@ picture img{
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
 .text-preset-1 {
     font-size: var(--fs-1);
     font-weight: var(--fw-bold);
@@ -135,6 +139,12 @@ picture img{
 
 .hidden {
     display: none;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width: 550px) {
